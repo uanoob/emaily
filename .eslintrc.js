@@ -1,3 +1,13 @@
 module.exports = {
-    "extends": "airbnb"
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "node": true
+      },
+    "rules": {
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+        "jsx-a11y/anchor-is-valid": [ "error", {"components": [ "Link" ], "specialLink": [ "to" ]}],
+        "consistent-return": 0,
+      }
 };
